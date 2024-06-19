@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="" ng-init = "points = [1,2,3,4,5]">
+  <p>Name: <input type="text" ng-model="name"></p>
+  <p ng-bind="name"></p>
+  <p> My First Expression {{5+5}} </p>
+  <p> 3rd array : {{ points[2] }} </p>
+  <ol>
+   <li ng-repeat =  "y in points" > 
+    {{y}}
+   </li>
+  </ol>
+</div>
+
+</body>
+</html>
